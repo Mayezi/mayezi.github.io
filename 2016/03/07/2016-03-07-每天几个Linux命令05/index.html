@@ -1,0 +1,1040 @@
+<!doctype html>
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="马叶子zy" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="M'Notes" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="今天主要讲一些Linux的常识，当然，也有命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每天几个Linux命令05">
+<meta property="og:url" content="http://mayezi.tk/2016/03/07/2016-03-07-每天几个Linux命令05/index.html">
+<meta property="og:site_name" content="M'Notes">
+<meta property="og:description" content="今天主要讲一些Linux的常识，当然，也有命令">
+<meta property="og:updated_time" content="2016-03-28T05:12:48.177Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="每天几个Linux命令05">
+<meta name="twitter:description" content="今天主要讲一些Linux的常识，当然，也有命令">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"default"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6215769327879063000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 每天几个Linux命令05 | M'Notes </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="http://s6.cnzz.com/stat.php?id=1258178302&web_id=1258178302" type="text/javascript"></script>
+  </div>
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <a href="https://github.com/Mayezi"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">M'Notes</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Less is more</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            文章分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            自我介绍
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            留言板
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                每天几个Linux命令05
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-07T16:00:25+08:00" content="2016-03-07">
+              2016-03-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/07/2016-03-07-每天几个Linux命令05/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/07/2016-03-07-每天几个Linux命令05/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/07/2016-03-07-每天几个Linux命令05/" class="leancloud_visitors" data-flag-title="每天几个Linux命令05">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>今天主要讲一些Linux的常识，当然，也有命令<br><a id="more"></a></p>
+<blockquote>
+<h2 id="linux文件属性"><a href="#linux文件属性" class="headerlink" title="linux文件属性"></a>linux文件属性</h2></blockquote>
+<p> 使用<code>ll</code>即可查看其目录属性一共有9列</p>
+<ol>
+<li>第1列，文件类型|所属主|所属组|其他用户对该文件的权限<ol>
+<li>第一列共10位，其中第一位用来描述该文件的类型；<br>d 表示该文件为目录；<br>–  表示该文件为普通文件；<br>l 表示该文件为连接文件；<br>b 表示该文件为块设备文件，比如磁盘分区；<br>c 表示该文件为串行端口设备，例如键盘、鼠标；<br>s 表示该文件为套接字文件（socket），用于进程间通信；</li>
+<li>后边的9位，每三个为一组，均为rwx 三个参数的组合；<br>r 代表可读，w代表可写，x代表可执行；<br>前三位为：所属主（user）的权限 中间三位为：所属组（group）的权限<br>最后三位：其他非本群组（others）的权限；</li>
+</ol>
+</li>
+<li>第2列，表示为连接占用的节点（inode）；</li>
+<li>第3列，表示该文件的所属主；</li>
+<li>第4列，表示该文件的所属组；</li>
+<li>第5列，表示该文件的大小；</li>
+<li>第6列、第7列和第8列为该文件的创建日期或者最近的修改日期，分别为月份日期以及时间；</li>
+<li>第9列，文件名<br>如果前面有一个. 则表示该文件为隐藏文件；</li>
+</ol>
+<blockquote>
+<h2 id="更改文件的权限"><a href="#更改文件的权限" class="headerlink" title="更改文件的权限"></a>更改文件的权限</h2></blockquote>
+<ol>
+<li>更改所属主、所属组以及其对应的读写执行权限<br><code>chgrp [组名] [文件名]</code>更改所属组 chgrp<br><code>chgrp testgroup testdir/</code>更改testdir文件夹的所属组为testgroup</li>
+<li>更改文件的所属主<br>chown [ -R ] 账户名 文件名<br>chown [ -R ] 账户名：组名 文件名<br><code>chown user1 testdir/</code>更改testdir的所属主为user1</li>
+<li><p>改变用户对文件的读写执行权限</p>
+<ol>
+<li>为方便更改权限，linux使用数字去代替rwx ，具体规则为<br><strong>r:4 w:2 x:1 -:0</strong></li>
+<li>chmod [-R] xyz 文件名 （这里的xyz，表示数字）<br><code>chmod 777 test</code>将test文件的权限修改为可读可写可执行</li>
+<li>linux系统中，一个目录的默认权限为 755，一个文件的默认权限为644；</li>
+<li>chmod 还支持使用rwx的方式来设置权限<br>chmod [u(user)/g(group)/o(other)/a(all)] [+(加入)/- (除去)/=(设定)] [r/w/x] 文件或目录<br>e.g. <code>chmod u=rwx,g=w,o=w testdir/</code>将testdir目录的权限设置为user可读可写可执行，其他只读</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<h2 id="linux-文件后缀名"><a href="#linux-文件后缀名" class="headerlink" title="linux 文件后缀名"></a>linux 文件后缀名</h2></blockquote>
+<ol>
+<li>linux中，文件后缀名无具体意义，加不加无所谓；</li>
+<li>为了容易区分，建议给文件加一个后缀名；</li>
+<li>文件常见后缀名：<ul>
+<li>.sh代表它是一个shell script ；</li>
+<li>.tar.gz 代表它是一个压缩包；</li>
+<li>.cnf 代表它是一个配置文件；</li>
+<li>.zip 代表它是一个压缩文件；</li>
+</ul>
+</li>
+<li>文件名最长可达256个字符；<br>5.大小写敏感；</li>
+</ol>
+<blockquote>
+<h2 id="Linux系统用户以及用户组管理"><a href="#Linux系统用户以及用户组管理" class="headerlink" title="Linux系统用户以及用户组管理"></a>Linux系统用户以及用户组管理</h2></blockquote>
+<ul>
+<li>新增/删除用户和用户组<ul>
+<li><code>groupadd [-g GID] groupname</code>新增组</li>
+<li><code>gropudel groupname</code> 删除组</li>
+</ul>
+</li>
+<li>增加用户<ul>
+<li><code>useradd [-u UID] [-g GID] [-d HOME] [-M] [-s]</code> </li>
+<li>-u 自定义UID<br>-g 使其属于已经存在的某个GID<br>-d 自定义用户的家目录<br>-M 不建立家目录<br>-s 自定义shell</li>
+</ul>
+</li>
+<li>删除用户<ul>
+<li><code>userdel [-r] username</code>-r 选项的作用是删除用户时，连同用户的家目录一起删除；</li>
+</ul>
+</li>
+<li>创建/修改一个用户的密码<ul>
+<li><code>passwd [username]</code>后面不跟用户名则是更改当前用户的密码</li>
+</ul>
+</li>
+<li>用户身份切换<ul>
+<li><code>su [-] username</code>加”-“后会连同用户的环境变量一起切换过来；</li>
+</ul>
+</li>
+<li>sudo 指令名称<ul>
+<li>执行root才能执行的命令，但需要输入用户自己的密码；<br>普通用户要使用sudo，需root预先设定相关的配置文件：/etc/sudoers；</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h2 id="Linux磁盘管理"><a href="#Linux磁盘管理" class="headerlink" title="Linux磁盘管理"></a>Linux磁盘管理</h2></blockquote>
+<ul>
+<li><strong>df</strong><br>查看已挂载磁盘的总容量、使用容量、剩余容量等，可以不加任何参数，默认是按k为单位显示</li>
+<li><strong>du</strong><ul>
+<li>语法：<code>du [-abckmsh] [文件或者目录名]</code><br>如果不加任何选项和参数只列出目录（包含子目录）大小；<br>-a：全部文件与目录大小都列出来。<br>-b：列出的值以bytes为单位输出，默认是以Kbytes；<br>-c：最后加总；<br>-k：以KB为单位输出；<br>-m：以MB为单位输出；<br>-s：只列出总和；<br>-h：系统自动调节单位；</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h2 id="文件压缩打包"><a href="#文件压缩打包" class="headerlink" title="文件压缩打包"></a>文件压缩打包</h2></blockquote>
+<ul>
+<li><strong>gzip压缩文件</strong><ul>
+<li>语法：<code>gzip [选项] [文件和目录列表]</code><br>-d 将压缩文件解压；<br>-l 对每个压缩文件，显示压缩文件的大小、未压缩文件的<br>大小、压缩比以及未压缩文件的名字等详细信息；<br>-r 递归式地查找指定目录并压缩其中的所有文件或者是解<br>压缩；<br>-t 测试，检查压缩文件是否完整；<br>-v 对每一个压缩和解压的文件，显示文件名和压缩比；</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h2 id="文件压缩打包-1"><a href="#文件压缩打包-1" class="headerlink" title="文件压缩打包"></a>文件压缩打包</h2></blockquote>
+<ul>
+<li><strong>tar 文件打包</strong><br>语法：<code>tar [选项] [文件和目录列表]</code><br>-c 建立新的文档<br>-r 附加到文档结尾<br>-t 列出文档中文件的目录<br>-u 仅将较新的文件附加到文档中<br>-x 从文档展开文件<br>-A 将文档与已有的文档合并<br>-d 比较文档与当前文件的不同之处<br>–delete 从文档中删除<br>-C 转到指定的目录<br>-k 保存现有文件；从文档中展开时不进行覆盖<br>-m 当从一个文档中恢复文件时，不使用新的时间标签<br>–remove-files 建立文档后删除源文件<br>–exclude FILE 不把指定文件包含在内<br>-z 用 gzip 对文档压缩或解压</li>
+</ul>
+<blockquote>
+<h2 id="Linux联机帮助"><a href="#Linux联机帮助" class="headerlink" title="Linux联机帮助"></a>Linux联机帮助</h2></blockquote>
+<ul>
+<li><strong>man</strong><ul>
+<li>语法： man [选项] 命令名称<br>-f 只显示出命令的功能而不显示其中详细的说明文件<br>-w 不显示手册页，只显示将被格式化和显示的文件所在<br>位置<br>– S 根据章节显示，由于一个命令名称可能会有很多类别<br>-E 在每行末尾显示$符号</li>
+</ul>
+</li>
+<li><strong>help</strong></li>
+<li><strong>whereis</strong></li>
+</ul>
+<hr>
+<blockquote>
+<h2 id="Linux关机和重启"><a href="#Linux关机和重启" class="headerlink" title="Linux关机和重启"></a>Linux关机和重启</h2></blockquote>
+<ul>
+<li><strong>shutdown</strong><br>语法： <code>shutdown [选项] [时间][警告信息]</code><br>-k 模拟关机（不是真的关机），向登录者发送警告信息；<br>-r 关闭系统然后重新启动；<br>-h 关闭电源<br>-c 中断关机</li>
+<li><strong>halt</strong><br>语法：<code>halt [选项]</code><br>-n 防止sync系统调用;<br>-w 并不是真正的重启或关机,只是写wtmp(/var/log/wtmp)纪录;<br>-d 不写wtmp纪录(已包含在选项-n中);<br>-f 没有调用shutdown而强制关机或重启;<br>-i 关机〔或重启〕前﹐关掉所有的网络接口;<br>-p 该选项为缺省选项。就是关机时调用poweroff;</li>
+<li><strong>reboot</strong><br>语法： <code>reboot [选项]</code><br>-d 重新启动时不把数据写入记录文件/var/tmp/wtmp<br>-f 强制重新开机，不调用shutdown指令的功能。<br>-i 关闭网络设置之后再重新启动系统<br>-n 保存数据后再重新启动系统<br>-w 并不真的将系统重新开机，只会把重开机的数据写入<br>/var/log目录下的wtmp记录文件</li>
+</ul>
+<p><strong>参考文档</strong></p>
+<p><a href="">教师PPT</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/03/2016-03-03-每天几个Linux命令04/" rel="next" title="每天几个Linux命令04">
+                <i class="fa fa-chevron-left"></i> 每天几个Linux命令04
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/26/2016-03-26-博客优化更新日志/" rel="prev" title="博客优化更新日志">
+                博客优化更新日志 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/03/07/2016-03-07-每天几个Linux命令05/"
+     data-title="每天几个Linux命令05"
+     data-content=""
+     data-url="http://mayezi.tk/2016/03/07/2016-03-07-每天几个Linux命令05/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/07/2016-03-07-每天几个Linux命令05/"
+           data-title="每天几个Linux命令05" data-url="http://mayezi.tk/2016/03/07/2016-03-07-每天几个Linux命令05/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://7xs9bo.com1.z0.glb.clouddn.com/default_avatar.jpg"
+               alt="马叶子zy" />
+          <p class="site-author-name" itemprop="name">马叶子zy</p>
+          <p class="site-description motion-element" itemprop="description">人都是要有梦想的，说不定就实现了呢</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/mayezi99" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Mayezi" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">友情链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.Heyanfeng.com" target="_blank">Heyanfeng</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://jiale112512.github.io" target="_blank">Wanjiale</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux文件属性"><span class="nav-number">1.</span> <span class="nav-text">linux文件属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改文件的权限"><span class="nav-number">2.</span> <span class="nav-text">更改文件的权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-文件后缀名"><span class="nav-number">3.</span> <span class="nav-text">linux 文件后缀名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux系统用户以及用户组管理"><span class="nav-number">4.</span> <span class="nav-text">Linux系统用户以及用户组管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux磁盘管理"><span class="nav-number">5.</span> <span class="nav-text">Linux磁盘管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件压缩打包"><span class="nav-number">6.</span> <span class="nav-text">文件压缩打包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件压缩打包-1"><span class="nav-number">7.</span> <span class="nav-text">文件压缩打包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux联机帮助"><span class="nav-number">8.</span> <span class="nav-text">Linux联机帮助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux关机和重启"><span class="nav-number">9.</span> <span class="nav-text">Linux关机和重启</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">马叶子zy</span>
+</div>
+
+<div class="powered-by">
+   <a class="theme-link" href="http://hexo.io">Hexo</a> 驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+     你是第<span id="busuanzi_value_site_uv"></span>个到访的小伙伴
+</span>
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"mayezi"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("Aisufan1CfcIBPE38pIh054j-gzGzoHsz", "yU7g3NAfCxEwQ3txPn8W8GlJ");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
