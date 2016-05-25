@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>M&#39;Notes</title>
+  <subtitle>Less is more</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mayezi.tk/"/>
+  <updated>2016-04-05T23:49:24.747Z</updated>
+  <id>http://mayezi.tk/</id>
+  
+  <author>
+    <name>马叶子zy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客优化更新日志</title>
+    <link href="http://mayezi.tk/2016/03/26/2016-03-26-%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <id>http://mayezi.tk/2016/03/26/2016-03-26-博客优化更新日志/</id>
+    <published>2016-03-26T02:04:49.000Z</published>
+    <updated>2016-04-05T23:49:24.747Z</updated>
+    
+    <content type="html">&lt;p&gt;详细记录博客建立以来的各种优化，喜欢的朋友不妨参考参考&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;声明以next主题为例&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;站点配置文件&lt;/strong&gt;在博客根目录下(BLOGDIR/_config.yml)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主题配置文件&lt;/strong&gt;在主题目录下(BLOGDIR/theme/next/_config.yml)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;添加多说评论&quot;&gt;&lt;a href=&quot;#添加多说评论&quot; class=&quot;headerlink&quot; title=&quot;添加多说评论&quot;&gt;&lt;/a&gt;添加多说评论&lt;/h2&gt;&lt;p&gt;NexT主题默认支持多说评论，所以我们直接注册一个多说域名&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;进入&lt;a href=&quot;http://duoshuo.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多说&lt;/a&gt;首页登陆以后点击我要安装&lt;/li&gt;
+&lt;li&gt;创建站点，填写相关信息，多说域名就是duoshuo_shortname&lt;br&gt;&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/%E5%A4%9A%E8%AF%B4%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;创建完成以后在&lt;strong&gt;站点配置文件&lt;/strong&gt;里面新增duoshuo_shortname,值为我们刚刚填的多说域名，注意中间有空格&lt;br&gt;&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/duoshuo_shortname.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;以上就在我们的每篇文章下面开启了多说评论，如果某篇文章不想开启评论的话只需要在文章里面配置&lt;strong&gt;comments: false&lt;/strong&gt;即可&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/%E5%85%B3%E9%97%AD%E8%AF%84%E8%AE%BA.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;想要优化我们的评论主题请继续更着我走&lt;/li&gt;
+&lt;li&gt;进入多说的后台管理&lt;/li&gt;
+&lt;li&gt;进入设置找到自定义CSS字段&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/css%E8%AE%BE%E7%BD%AE.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;直接将以下内容直接复制到里面,是的，不用担心装不下，哈哈&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#ds-reset .ds-avatar img,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ds-recent-visitors .ds-avatar img &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	width: 54px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	height: 54px;     /*設置圖像的長和寬，這裏要根據自己的評論框情況更改*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	border-radius: 27px;     /*設置圖像圓角效果,在這裏我直接設置了超過width/2的像素，即為圓形了*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-webkit-border-radius: 27px;     /*圓角效果：兼容webkit瀏覽器*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-moz-border-radius: 27px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	box-shadow: inset 0 -1px 0 #3333sf;     /*設置圖像陰影效果*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-webkit-box-shadow: inset 0 -1px 0 #3333sf;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-webkit-transition: 0.4s;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-webkit-transition: -webkit-transform 0.4s ease-out;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	transition: transform 0.4s ease-out;     /*變化時間設置為0.4秒(變化動作即為下麵的圖像旋轉360讀）*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-moz-transition: -moz-transform 0.4s ease-out;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ds-reset .ds-avatar img:hover,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ds-recent-visitors .ds-avatar img:hover &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	/*設置鼠標懸浮在頭像時的CSS樣式*/    box-shadow: 0 0 10px #fff;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	rgba(255, 255, 255, .6), inset 0 0 20px rgba(255, 255, 255, 1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-webkit-box-shadow: 0 0 10px #fff;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	rgba(255, 255, 255, .6), inset 0 0 20px rgba(255, 255, 255, 1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	transform: rotateZ(360deg);     /*圖像旋轉360度*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-webkit-transform: rotateZ(360deg);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	-moz-transform: rotateZ(360deg);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ds-thread #ds-reset .ds-textarea-wrapper textarea &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	background: url(http://ww4.sinaimg.cn/small/649a4735gw1et7gnhy5fej20zk0m8q3q.jpg) right no-repeat;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ds-recent-visitors .ds-avatar &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	float: left&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/*隱藏多說底部版權*/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ds-thread #ds-reset .ds-powered-by &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	display: none;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;添加留言板&quot;&gt;&lt;a href=&quot;#添加留言板&quot; class=&quot;headerlink&quot; title=&quot;添加留言板&quot;&gt;&lt;/a&gt;添加留言板&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/%E7%95%99%E8%A8%80%E6%9D%BF.png&quot; alt=&quot;留言板展示效果&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;修改点&quot;&gt;&lt;a href=&quot;#修改点&quot; class=&quot;headerlink&quot; title=&quot;修改点&quot;&gt;&lt;/a&gt;修改点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;主题配置文件(blog/themes/next/_config.yml)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;语言配置文件(blogdir/themes/next/languages/zh-Hans.yml)&lt;/p&gt;
+&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开主题配置文件添加guestbook到menu中&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;menu:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  home: /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #categories: /categories&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  about: /about&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  archives: /archives&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  # tags: /tags&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #commonweal: /404.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  guestbook: /guestbook&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开语言配置文件，添加guestbook: 留言板到menu中&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;menu:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  home: 首页&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  archives: 所有文章&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  categories: 文章分类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  tags: 文章标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  about: 自我介绍&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  search: 站内搜索&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  commonweal: 公益404&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  guestbook: 留言板&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;新建一个&lt;strong&gt;guestbook&lt;/strong&gt;页面&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new page &amp;quot;guestbook&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开&lt;strong&gt;BLOGDIR/source/guestbook/index.md&lt;/strong&gt; ,编辑你的留言界面吧，以下是我的&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/%E7%95%99%E8%A8%80%E6%9D%BF%E6%A0%B7%E5%BC%8F.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;以上最后一行为多说的最近访客代码块&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;div class=&amp;quot;ds-recent-visitors&amp;quot; data-num-items=&amp;quot;28&amp;quot; data-avatar-size=&amp;quot;42&amp;quot; id=&amp;quot;ds-recent-visitors&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;如何扒别人的多说样式&lt;/strong&gt;&lt;br&gt;看到好的样式，F12打开控制台，找到&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;就是这个css&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/%E6%89%92css.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;添加Fork-Me-On-Github&quot;&gt;&lt;a href=&quot;#添加Fork-Me-On-Github&quot; class=&quot;headerlink&quot; title=&quot;添加Fork Me On Github&quot;&gt;&lt;/a&gt;添加Fork Me On Github&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在&lt;a href=&quot;https://github.com/blog/273-github-ribbons&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;选好样式&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;复制里面的代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;a href=&amp;quot;https://github.com/you&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;position: absolute; top: 0; right: 0; border: 0;&amp;quot; src=&amp;quot;https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67&amp;quot; alt=&amp;quot;Fork me on GitHub&amp;quot; data-canonical-src=&amp;quot;https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改href地址为你自己的github地址&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;a href=&amp;quot;https://github.com/you&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 改为:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;a href=&amp;quot;https://github.com/Mayezi&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改文件&lt;strong&gt;BLOGDIR/themes/next/layout/_layout.swig&lt;/strong&gt;,找到如下位置，添加以上代码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;html class=&amp;quot;theme-next &amp;#123;% if theme.use_motion %&amp;#125;use-motion&amp;#123;% endif %&amp;#125; &amp;#123;% if theme.scheme %&amp;#125;theme-next-&amp;#123;&amp;#123; theme.scheme | lower &amp;#125;&amp;#125;&amp;#123;% endif %&amp;#125;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#123;% include &amp;apos;_partials/head.swig&amp;apos; %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;title&amp;gt;&amp;#123;% block title %&amp;#125;&amp;#123;% endblock %&amp;#125;&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#123;% include &amp;apos;_partials/old-browsers.swig&amp;apos; %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;div class=&amp;quot;container one-column &amp;#123;% block page_class %&amp;#125;&amp;#123;% endblock %&amp;#125;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;div class=&amp;quot;headband&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!----------- add Fork me on Github ------------&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;a href=&amp;quot;https://github.com/hhstore&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;position: absolute; top: 500; left: 0; border: 0;&amp;quot; src=&amp;quot;https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67&amp;quot; alt=&amp;quot;Fork me on GitHub&amp;quot; data-canonical-src=&amp;quot;https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!----------- add Fork me on Github ------------&amp;gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;div id=&amp;quot;header&amp;quot; class=&amp;quot;header&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;div class=&amp;quot;header-inner&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;% include &amp;apos;_partials/header.swig&amp;apos; %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!-------------省略-------------------&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;!-------------省略-------------------&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;div class=&amp;quot;back-to-top&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;SEO优化&quot;&gt;&lt;a href=&quot;#SEO优化&quot; class=&quot;headerlink&quot; title=&quot;SEO优化&quot;&gt;&lt;/a&gt;SEO优化&lt;/h2&gt;&lt;h3 id=&quot;优化title&quot;&gt;&lt;a href=&quot;#优化title&quot; class=&quot;headerlink&quot; title=&quot;优化title&quot;&gt;&lt;/a&gt;优化title&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;更改index.swig文件，文件路径BLOGDIR/themes/next/layout&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;将下面代码:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% block title %&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#123;&amp;#123; config.title &amp;#125;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% endblock %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;改成:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% block title %&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#123;&amp;#123; config.title &amp;#125;&amp;#125; - &amp;#123;&amp;#123; theme.description &amp;#125;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% endblock %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;SEO进阶优化&quot;&gt;&lt;a href=&quot;#SEO进阶优化&quot; class=&quot;headerlink&quot; title=&quot;SEO进阶优化&quot;&gt;&lt;/a&gt;SEO进阶优化&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;继续修改，在Title中显示关键词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;% block title %&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#123;&amp;#123; theme.keywords &amp;#125;&amp;#125; - &amp;#123;&amp;#123; config.title &amp;#125;&amp;#125; - &amp;#123;&amp;#123; theme.description &amp;#125;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% endblock %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;添加Swiftype站内搜索&quot;&gt;&lt;a href=&quot;#添加Swiftype站内搜索&quot; class=&quot;headerlink&quot; title=&quot;添加Swiftype站内搜索&quot;&gt;&lt;/a&gt;添加Swiftype站内搜索&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;详见&lt;a href=&quot;http://theme-next.iissnan.com/third-party-services.html#swiftype&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档添加Swiftype&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;添加友情链接&quot;&gt;&lt;a href=&quot;#添加友情链接&quot; class=&quot;headerlink&quot; title=&quot;添加友情链接&quot;&gt;&lt;/a&gt;添加友情链接&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参考这篇文章&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://notes.xiamo.tk/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为NexT添加文章阅读统计功能&lt;/a&gt;&lt;h2 id=&quot;添加背景音乐&quot;&gt;&lt;a href=&quot;#添加背景音乐&quot; class=&quot;headerlink&quot; title=&quot;添加背景音乐&quot;&gt;&lt;/a&gt;添加背景音乐&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;严格的说不算背景音乐，只是在页面中添加了音乐&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bug&lt;/strong&gt;很多，只能在当前页面播放，刷新以后只能从头播放&lt;/li&gt;
+&lt;li&gt;使用效果详见&lt;a href=&quot;http://mayezi.tk/guestbook/&quot;&gt;留言板&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;CDN加速&quot;&gt;&lt;a href=&quot;#CDN加速&quot; class=&quot;headerlink&quot; title=&quot;CDN加速&quot;&gt;&lt;/a&gt;CDN加速&lt;/h2&gt;&lt;p&gt;待填&lt;/p&gt;
+&lt;h2 id=&quot;添加RSS插件&quot;&gt;&lt;a href=&quot;#添加RSS插件&quot; class=&quot;headerlink&quot; title=&quot;添加RSS插件&quot;&gt;&lt;/a&gt;添加RSS插件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;打开gitbash，安装&lt;a href=&quot;https://github.com/hexojs/hexo-generator-feed&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-generator-feed&lt;/a&gt;插件&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-feed --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;打开&lt;strong&gt;站点配置文件&lt;/strong&gt;，添加以下字段&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;feed:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: atom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  path: atom.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  limit: 20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  hub:&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;添加-InstantClick&quot;&gt;&lt;a href=&quot;#添加-InstantClick&quot; class=&quot;headerlink&quot; title=&quot;添加 InstantClick&quot;&gt;&lt;/a&gt;添加 InstantClick&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;这个功能通过预加载可以达到网页秒开的效果 (并没有实际提速)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入官网&lt;a href=&quot;http://instantclick.io/download&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;InstantClick&lt;/a&gt;下载&lt;strong&gt;instantclick.min.js&lt;/strong&gt;至使用主题目录下&lt;strong&gt;source/js&lt;/strong&gt;文件夹里, 然后在&lt;strong&gt;\layout_partial&lt;/strong&gt;里的&lt;strong&gt;footer.swig&lt;/strong&gt;, 加上如下代码即可&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script src=&amp;quot;/js/instantclick.min.js&amp;quot; data-no-instant&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script data-no-instant&amp;gt;InstantClick.init();&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;但是这个功能不会预加载评论，所以我暂时取消，待填坑&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;添加high一下&quot;&gt;&lt;a href=&quot;#添加high一下&quot; class=&quot;headerlink&quot; title=&quot;添加high一下&quot;&gt;&lt;/a&gt;添加high一下&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;音乐不太合乎我的口味，所以我暂时没添加&lt;/li&gt;
+&lt;li&gt;参考这篇吧&lt;a href=&quot;http://jijiaxin89.com/2015/08/21/%E7%8E%A9%E8%BD%AChexo%E5%8D%9A%E5%AE%A2%E4%B9%8Bnext/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为NexT主题添加high一下&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;设置知识共享版权&quot;&gt;&lt;a href=&quot;#设置知识共享版权&quot; class=&quot;headerlink&quot; title=&quot;设置知识共享版权&quot;&gt;&lt;/a&gt;设置知识共享版权&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;维基详情&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E5%88%9B%E4%BD%9C%E5%85%B1%E7%94%A8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知识共享&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;两张图就能表示清楚&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/zhishi.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;本博客使用的BY-NC-SA&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://7xs9bo.com1.z0.glb.clouddn.com/shi.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;写在后面的话，周末陆陆续续写了这么一篇，主要是为了自己以后查看也方便，如果本文对你有用的话，那可真是开了个心。&lt;br&gt;&lt;a href=&quot;http://mayezi.tk/guestbook/&quot;&gt;留个言&lt;/a&gt;表示支持吧&lt;/p&gt;
+&lt;h2 id=&quot;参考文档&quot;&gt;&lt;a href=&quot;#参考文档&quot; class=&quot;headerlink&quot; title=&quot;参考文档&quot;&gt;&lt;/a&gt;参考文档&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://theme-next.iissnan.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NexT官方使用文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zhiqiang.org/blog/it/install-instantclick.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;博客启用InstantClick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://jijiaxin89.com/2015/08/21/%E7%8E%A9%E8%BD%AChexo%E5%8D%9A%E5%AE%A2%E4%B9%8Bnext/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;玩转hexo博客之next&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.selfrebuild.net/2015/06/24/Github-Hexo-Next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AE%9A%E5%88%B6/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo博客优化 - Next主题个性化定制&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lukang.me/2015/optimization-of-hexo-2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo 优化与定制(二)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;详细记录博客建立以来的各种优化，喜欢的朋友不妨参考参考&lt;br&gt;
+    
+    </summary>
+    
+      <category term="博客优化" scheme="http://mayezi.tk/categories/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>每天几个Linux命令05</title>
+    <link href="http://mayezi.tk/2016/03/07/2016-03-07-%E6%AF%8F%E5%A4%A9%E5%87%A0%E4%B8%AALinux%E5%91%BD%E4%BB%A405/"/>
+    <id>http://mayezi.tk/2016/03/07/2016-03-07-每天几个Linux命令05/</id>
+    <published>2016-03-07T08:00:25.000Z</published>
+    <updated>2016-03-28T05:12:48.177Z</updated>
+    
+    <content type="html">&lt;p&gt;今天主要讲一些Linux的常识，当然，也有命令&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;linux文件属性&quot;&gt;&lt;a href=&quot;#linux文件属性&quot; class=&quot;headerlink&quot; title=&quot;linux文件属性&quot;&gt;&lt;/a&gt;linux文件属性&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;p&gt; 使用&lt;code&gt;ll&lt;/code&gt;即可查看其目录属性一共有9列&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第1列，文件类型|所属主|所属组|其他用户对该文件的权限&lt;ol&gt;
+&lt;li&gt;第一列共10位，其中第一位用来描述该文件的类型；&lt;br&gt;d 表示该文件为目录；&lt;br&gt;–  表示该文件为普通文件；&lt;br&gt;l 表示该文件为连接文件；&lt;br&gt;b 表示该文件为块设备文件，比如磁盘分区；&lt;br&gt;c 表示该文件为串行端口设备，例如键盘、鼠标；&lt;br&gt;s 表示该文件为套接字文件（socket），用于进程间通信；&lt;/li&gt;
+&lt;li&gt;后边的9位，每三个为一组，均为rwx 三个参数的组合；&lt;br&gt;r 代表可读，w代表可写，x代表可执行；&lt;br&gt;前三位为：所属主（user）的权限 中间三位为：所属组（group）的权限&lt;br&gt;最后三位：其他非本群组（others）的权限；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;第2列，表示为连接占用的节点（inode）；&lt;/li&gt;
+&lt;li&gt;第3列，表示该文件的所属主；&lt;/li&gt;
+&lt;li&gt;第4列，表示该文件的所属组；&lt;/li&gt;
+&lt;li&gt;第5列，表示该文件的大小；&lt;/li&gt;
+&lt;li&gt;第6列、第7列和第8列为该文件的创建日期或者最近的修改日期，分别为月份日期以及时间；&lt;/li&gt;
+&lt;li&gt;第9列，文件名&lt;br&gt;如果前面有一个. 则表示该文件为隐藏文件；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;更改文件的权限&quot;&gt;&lt;a href=&quot;#更改文件的权限&quot; class=&quot;headerlink&quot; title=&quot;更改文件的权限&quot;&gt;&lt;/a&gt;更改文件的权限&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;更改所属主、所属组以及其对应的读写执行权限&lt;br&gt;&lt;code&gt;chgrp [组名] [文件名]&lt;/code&gt;更改所属组 chgrp&lt;br&gt;&lt;code&gt;chgrp testgroup testdir/&lt;/code&gt;更改testdir文件夹的所属组为testgroup&lt;/li&gt;
+&lt;li&gt;更改文件的所属主&lt;br&gt;chown [ -R ] 账户名 文件名&lt;br&gt;chown [ -R ] 账户名：组名 文件名&lt;br&gt;&lt;code&gt;chown user1 testdir/&lt;/code&gt;更改testdir的所属主为user1&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;改变用户对文件的读写执行权限&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;为方便更改权限，linux使用数字去代替rwx ，具体规则为&lt;br&gt;&lt;strong&gt;r:4 w:2 x:1 -:0&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;chmod [-R] xyz 文件名 （这里的xyz，表示数字）&lt;br&gt;&lt;code&gt;chmod 777 test&lt;/code&gt;将test文件的权限修改为可读可写可执行&lt;/li&gt;
+&lt;li&gt;linux系统中，一个目录的默认权限为 755，一个文件的默认权限为644；&lt;/li&gt;
+&lt;li&gt;chmod 还支持使用rwx的方式来设置权限&lt;br&gt;chmod [u(user)/g(group)/o(other)/a(all)] [+(加入)/- (除去)/=(设定)] [r/w/x] 文件或目录&lt;br&gt;e.g. &lt;code&gt;chmod u=rwx,g=w,o=w testdir/&lt;/code&gt;将testdir目录的权限设置为user可读可写可执行，其他只读&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;linux-文件后缀名&quot;&gt;&lt;a href=&quot;#linux-文件后缀名&quot; class=&quot;headerlink&quot; title=&quot;linux 文件后缀名&quot;&gt;&lt;/a&gt;linux 文件后缀名&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;linux中，文件后缀名无具体意义，加不加无所谓；&lt;/li&gt;
+&lt;li&gt;为了容易区分，建议给文件加一个后缀名；&lt;/li&gt;
+&lt;li&gt;文件常见后缀名：&lt;ul&gt;
+&lt;li&gt;.sh代表它是一个shell script ；&lt;/li&gt;
+&lt;li&gt;.tar.gz 代表它是一个压缩包；&lt;/li&gt;
+&lt;li&gt;.cnf 代表它是一个配置文件；&lt;/li&gt;
+&lt;li&gt;.zip 代表它是一个压缩文件；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;文件名最长可达256个字符；&lt;br&gt;5.大小写敏感；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;Linux系统用户以及用户组管理&quot;&gt;&lt;a href=&quot;#Linux系统用户以及用户组管理&quot; class=&quot;headerlink&quot; title=&quot;Linux系统用户以及用户组管理&quot;&gt;&lt;/a&gt;Linux系统用户以及用户组管理&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;新增/删除用户和用户组&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;groupadd [-g GID] groupname&lt;/code&gt;新增组&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gropudel groupname&lt;/code&gt; 删除组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;增加用户&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;useradd [-u UID] [-g GID] [-d HOME] [-M] [-s]&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;-u 自定义UID&lt;br&gt;-g 使其属于已经存在的某个GID&lt;br&gt;-d 自定义用户的家目录&lt;br&gt;-M 不建立家目录&lt;br&gt;-s 自定义shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;删除用户&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;userdel [-r] username&lt;/code&gt;-r 选项的作用是删除用户时，连同用户的家目录一起删除；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;创建/修改一个用户的密码&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;passwd [username]&lt;/code&gt;后面不跟用户名则是更改当前用户的密码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;用户身份切换&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;su [-] username&lt;/code&gt;加”-“后会连同用户的环境变量一起切换过来；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sudo 指令名称&lt;ul&gt;
+&lt;li&gt;执行root才能执行的命令，但需要输入用户自己的密码；&lt;br&gt;普通用户要使用sudo，需root预先设定相关的配置文件：/etc/sudoers；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;Linux磁盘管理&quot;&gt;&lt;a href=&quot;#Linux磁盘管理&quot; class=&quot;headerlink&quot; title=&quot;Linux磁盘管理&quot;&gt;&lt;/a&gt;Linux磁盘管理&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;df&lt;/strong&gt;&lt;br&gt;查看已挂载磁盘的总容量、使用容量、剩余容量等，可以不加任何参数，默认是按k为单位显示&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;du&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;语法：&lt;code&gt;du [-abckmsh] [文件或者目录名]&lt;/code&gt;&lt;br&gt;如果不加任何选项和参数只列出目录（包含子目录）大小；&lt;br&gt;-a：全部文件与目录大小都列出来。&lt;br&gt;-b：列出的值以bytes为单位输出，默认是以Kbytes；&lt;br&gt;-c：最后加总；&lt;br&gt;-k：以KB为单位输出；&lt;br&gt;-m：以MB为单位输出；&lt;br&gt;-s：只列出总和；&lt;br&gt;-h：系统自动调节单位；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;文件压缩打包&quot;&gt;&lt;a href=&quot;#文件压缩打包&quot; class=&quot;headerlink&quot; title=&quot;文件压缩打包&quot;&gt;&lt;/a&gt;文件压缩打包&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;gzip压缩文件&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;语法：&lt;code&gt;gzip [选项] [文件和目录列表]&lt;/code&gt;&lt;br&gt;-d 将压缩文件解压；&lt;br&gt;-l 对每个压缩文件，显示压缩文件的大小、未压缩文件的&lt;br&gt;大小、压缩比以及未压缩文件的名字等详细信息；&lt;br&gt;-r 递归式地查找指定目录并压缩其中的所有文件或者是解&lt;br&gt;压缩；&lt;br&gt;-t 测试，检查压缩文件是否完整；&lt;br&gt;-v 对每一个压缩和解压的文件，显示文件名和压缩比；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;文件压缩打包-1&quot;&gt;&lt;a href=&quot;#文件压缩打包-1&quot; class=&quot;headerlink&quot; title=&quot;文件压缩打包&quot;&gt;&lt;/a&gt;文件压缩打包&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tar 文件打包&lt;/strong&gt;&lt;br&gt;语法：&lt;code&gt;tar [选项] [文件和目录列表]&lt;/code&gt;&lt;br&gt;-c 建立新的文档&lt;br&gt;-r 附加到文档结尾&lt;br&gt;-t 列出文档中文件的目录&lt;br&gt;-u 仅将较新的文件附加到文档中&lt;br&gt;-x 从文档展开文件&lt;br&gt;-A 将文档与已有的文档合并&lt;br&gt;-d 比较文档与当前文件的不同之处&lt;br&gt;–delete 从文档中删除&lt;br&gt;-C 转到指定的目录&lt;br&gt;-k 保存现有文件；从文档中展开时不进行覆盖&lt;br&gt;-m 当从一个文档中恢复文件时，不使用新的时间标签&lt;br&gt;–remove-files 建立文档后删除源文件&lt;br&gt;–exclude FILE 不把指定文件包含在内&lt;br&gt;-z 用 gzip 对文档压缩或解压&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;Linux联机帮助&quot;&gt;&lt;a href=&quot;#Linux联机帮助&quot; class=&quot;headerlink&quot; title=&quot;Linux联机帮助&quot;&gt;&lt;/a&gt;Linux联机帮助&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;man&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;语法： man [选项] 命令名称&lt;br&gt;-f 只显示出命令的功能而不显示其中详细的说明文件&lt;br&gt;-w 不显示手册页，只显示将被格式化和显示的文件所在&lt;br&gt;位置&lt;br&gt;– S 根据章节显示，由于一个命令名称可能会有很多类别&lt;br&gt;-E 在每行末尾显示$符号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;help&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;whereis&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;Linux关机和重启&quot;&gt;&lt;a href=&quot;#Linux关机和重启&quot; class=&quot;headerlink&quot; title=&quot;Linux关机和重启&quot;&gt;&lt;/a&gt;Linux关机和重启&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;shutdown&lt;/strong&gt;&lt;br&gt;语法： &lt;code&gt;shutdown [选项] [时间][警告信息]&lt;/code&gt;&lt;br&gt;-k 模拟关机（不是真的关机），向登录者发送警告信息；&lt;br&gt;-r 关闭系统然后重新启动；&lt;br&gt;-h 关闭电源&lt;br&gt;-c 中断关机&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;halt&lt;/strong&gt;&lt;br&gt;语法：&lt;code&gt;halt [选项]&lt;/code&gt;&lt;br&gt;-n 防止sync系统调用;&lt;br&gt;-w 并不是真正的重启或关机,只是写wtmp(/var/log/wtmp)纪录;&lt;br&gt;-d 不写wtmp纪录(已包含在选项-n中);&lt;br&gt;-f 没有调用shutdown而强制关机或重启;&lt;br&gt;-i 关机〔或重启〕前﹐关掉所有的网络接口;&lt;br&gt;-p 该选项为缺省选项。就是关机时调用poweroff;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;reboot&lt;/strong&gt;&lt;br&gt;语法： &lt;code&gt;reboot [选项]&lt;/code&gt;&lt;br&gt;-d 重新启动时不把数据写入记录文件/var/tmp/wtmp&lt;br&gt;-f 强制重新开机，不调用shutdown指令的功能。&lt;br&gt;-i 关闭网络设置之后再重新启动系统&lt;br&gt;-n 保存数据后再重新启动系统&lt;br&gt;-w 并不真的将系统重新开机，只会把重开机的数据写入&lt;br&gt;/var/log目录下的wtmp记录文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;教师PPT&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天主要讲一些Linux的常识，当然，也有命令&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://mayezi.tk/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>每天几个Linux命令04</title>
+    <link href="http://mayezi.tk/2016/03/03/2016-03-03-%E6%AF%8F%E5%A4%A9%E5%87%A0%E4%B8%AALinux%E5%91%BD%E4%BB%A404/"/>
+    <id>http://mayezi.tk/2016/03/03/2016-03-03-每天几个Linux命令04/</id>
+    <published>2016-03-03T13:49:46.000Z</published>
+    <updated>2016-03-28T05:12:52.928Z</updated>
+    
+    <content type="html">&lt;p&gt;今天的命令 tail whereis which&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;tail&quot;&gt;&lt;a href=&quot;#tail&quot; class=&quot;headerlink&quot; title=&quot;tail&quot;&gt;&lt;/a&gt;tail&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令内容&lt;br&gt;用于显示指定文件末尾内容，不指定文件时，作为输入信息进行处理。常用查看日志文件&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;tail[必要参数][选择参数][文件] &lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-f 循环读取&lt;br&gt;-q 不显示处理信息&lt;br&gt;-v 显示详细的处理信息&lt;br&gt;-c&amp;lt;数目&amp;gt; 显示的字节数&lt;br&gt;-n&amp;lt;行数&amp;gt; 显示行数&lt;br&gt;–pid=PID 与-f合用,表示在进程ID,PID死掉之后结束.&lt;br&gt;-q, –quiet, –silent 从不输出给出文件名的首部&lt;br&gt;-s, –sleep-interval=S 与-f合用,表示在每次反复的间隔休眠S秒&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令实例&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;tail -n 5 1.txt&lt;/code&gt;显示文本最后5行数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tail -n +5 1.txt&lt;/code&gt;从第5行开始显示&lt;blockquote&gt;
+&lt;h2 id=&quot;which&quot;&gt;&lt;a href=&quot;#which&quot; class=&quot;headerlink&quot; title=&quot;which&quot;&gt;&lt;/a&gt;which&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;which指令会在PATH变量指定的路径中，搜索某个系统命令的位置，并且返回第一个搜索结果&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;which 可执行文件名称&lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-n 　指定文件名长度，指定的长度必须大于或等于所有文件中最长的文件名。&lt;br&gt;-p 　与-n参数相同，但此处的包括了文件的路径。&lt;br&gt;-w 　指定输出时栏位的宽度。&lt;br&gt;-V 　显示版本信息&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;which ls&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;which which&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;whereis&quot;&gt;&lt;a href=&quot;#whereis&quot; class=&quot;headerlink&quot; title=&quot;whereis&quot;&gt;&lt;/a&gt;whereis&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;whereis命令是定位可执行文件、源代码文件、帮助文件在文件系统中的位置。这些文件的属性应属于原始代码，二进制文件，或是帮助文件。whereis 程序还具有搜索源代码、指定备用搜索路径和搜索不寻常项的能力&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;whereis [-bmsu] [BMS 目录名 -f ] 文件名&lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-b   定位可执行文件。&lt;br&gt;-m   定位帮助文件。&lt;br&gt;-s   定位源代码文件。&lt;br&gt;-u   搜索默认路径下除可执行文件、源代码文件、帮助文件以外的其它文件。&lt;br&gt;-B   指定搜索可执行文件的路径。&lt;br&gt;-M   指定搜索帮助文件的路径。&lt;br&gt;-S   指定搜索源代码文件的路径&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;whereis svn&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;每天一个Linux命令&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; &lt;/code&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天的命令 tail whereis which&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://mayezi.tk/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>每天几个Linux命令03</title>
+    <link href="http://mayezi.tk/2016/03/02/2016-03-02-%E6%AF%8F%E5%A4%A9%E5%87%A0%E4%B8%AAlinux%E5%91%BD%E4%BB%A403/"/>
+    <id>http://mayezi.tk/2016/03/02/2016-03-02-每天几个linux命令03/</id>
+    <published>2016-03-02T13:36:32.000Z</published>
+    <updated>2016-03-28T05:12:58.128Z</updated>
+    
+    <content type="html">&lt;p&gt;今天的命令nl more less head&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;nl&quot;&gt;&lt;a href=&quot;#nl&quot; class=&quot;headerlink&quot; title=&quot;nl&quot;&gt;&lt;/a&gt;nl&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;nl 命令读取 File 参数（缺省情况下标准输入），计算输入中的行号，将计算过的行号写入标准输出。 在输出中，nl 命令根据您在命令行中指定的标志来计算左边的行。 输入文本必须写在逻辑页中。每个逻辑页有头、主体和页脚节（可以有空节）。 除非使用 -p 标志，nl 命令在每个逻辑页开始的地方重新设置行号。 可以单独为头、主体和页脚节设置行计算标志（例如，头和页脚行可以被计算然而文本行不能&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;nl [选项]… [文件]…&lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-b  ：指定行号指定的方式，主要有两种：&lt;br&gt;-b a ：表示不论是否为空行，也同样列出行号(类似 cat -n)；&lt;br&gt;-b t ：如果有空行，空的那一行不要列出行号(默认值)；&lt;br&gt;-n  ：列出行号表示的方法，主要有三种：&lt;br&gt;-n ln ：行号在萤幕的最左方显示；&lt;br&gt;-n rn ：行号在自己栏位的最右方显示，且不加 0 ；&lt;br&gt;-n rz ：行号在自己栏位的最右方显示，且加 0 ；&lt;br&gt;-w  ：行号栏位的占用的位数。&lt;br&gt;-p 在逻辑定界符处不重新开始计算。&lt;/li&gt;
+&lt;li&gt;命令实例&lt;br&gt;&lt;code&gt;nl -b a -n rz -w 4 1.txt&lt;/code&gt;显示1.txt的内容 并在前面加上行号空白也算，并且同意行号格式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;more&quot;&gt;&lt;a href=&quot;#more&quot; class=&quot;headerlink&quot; title=&quot;more&quot;&gt;&lt;/a&gt;more&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;more命令和cat的功能一样都是查看文件里的内容，但有所不同的是more可以按页来查看文件的内容，还支持直接跳转行等功能&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;more [-dlfpcsu ] [-num ] [+/ pattern] [+ linenum] [file … ] &lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;  +n      从笫n行开始显示&lt;br&gt;-n       定义屏幕大小为n行&lt;br&gt;+/pattern 在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示&lt;br&gt;-c       从顶部清屏，然后显示&lt;br&gt;-d       提示“Press space to continue，’q’ to quit（按空格键继续，按q键退出）”，禁用响铃功能&lt;br&gt;-l        忽略Ctrl+l（换页）字符&lt;br&gt;-p       通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似&lt;br&gt;-s       把连续的多个空行显示为一行&lt;br&gt;-u       把文件内容中的下画线去掉&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;more +3 1.txt&lt;/code&gt; 从1.txt的第三行开始显示内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;more +/test 1.txt&lt;/code&gt;查找文件中第一次出现包含test的行，并且从该行的前两行开始显示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;more -2 1.txt&lt;/code&gt;设定每屏显示行数为2行，默认为1，此时按enter或者space继续显示下一屏的内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -l  | more -5&lt;/code&gt;每页4条文件数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;常用操作命令&lt;br&gt;Enter    向下n行，需要定义。默认为1行&lt;br&gt;Ctrl+F   向下滚动一屏&lt;br&gt;空格键  向下滚动一屏&lt;br&gt;Ctrl+B  返回上一屏&lt;br&gt;=       输出当前行的行号&lt;br&gt;：f     输出文件名和当前行的行号&lt;br&gt;V      调用vi编辑器&lt;br&gt;!命令   调用Shell，并执行命令&lt;br&gt;q       退出more&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;less&quot;&gt;&lt;a href=&quot;#less&quot; class=&quot;headerlink&quot; title=&quot;less&quot;&gt;&lt;/a&gt;less&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;less 与 more 类似，但使用 less 可以随意浏览文件，而 more 仅能向前移动，却不能向后移动，而且 less 在查看之前不会加载整个文件。&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;less [参数]  文件&lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-b &amp;lt;缓冲区大小&amp;gt; 设置缓冲区的大小&lt;br&gt;-e  当文件显示结束后，自动离开&lt;br&gt;-f  强迫打开特殊文件，例如外围设备代号、目录和二进制文件&lt;br&gt;-g  只标志最后搜索的关键词&lt;br&gt;-i  忽略搜索时的大小写&lt;br&gt;-m  显示类似more命令的百分比&lt;br&gt;-N  显示每行的行号&lt;br&gt;-o &amp;lt;文件名&amp;gt; 将less 输出的内容在指定文件中保存起来&lt;br&gt;-Q  不使用警告音&lt;br&gt;-s  显示连续空行为一行&lt;br&gt;-S  行过长时间将超出部分舍弃&lt;br&gt;-x &amp;lt;数字&amp;gt; 将“tab”键显示为规定的数字空格&lt;br&gt;/字符串：向下搜索“字符串”的功能&lt;br&gt;?字符串：向上搜索“字符串”的功能&lt;br&gt;n：重复前一个搜索（与 / 或 ? 有关）&lt;br&gt;N：反向重复前一个搜索（与 / 或 ? 有关）&lt;br&gt;b  向后翻一页&lt;br&gt;d  向后翻半页&lt;br&gt;h  显示帮助界面&lt;br&gt;Q  退出less 命令&lt;br&gt;u  向前滚动半页&lt;br&gt;y  向前滚动一行&lt;br&gt;空格键 滚动一行&lt;br&gt;回车键 滚动一页&lt;br&gt;[pagedown]： 向下翻动一页&lt;br&gt;[pageup]：   向上翻动一页&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;less 1.txt&lt;/code&gt;查看1.txt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;history | less&lt;/code&gt;查看历史记录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;附加备注&lt;br&gt;1.全屏导航&lt;br&gt;ctrl + F - 向前移动一屏&lt;br&gt;ctrl + B - 向后移动一屏&lt;br&gt;ctrl + D - 向前移动半屏&lt;br&gt;ctrl + U - 向后移动半屏&lt;/p&gt;
+&lt;p&gt;2.单行导航&lt;br&gt;j - 向前移动一行&lt;br&gt;k - 向后移动一行&lt;/p&gt;
+&lt;p&gt;3.其它导航&lt;br&gt;G - 移动到最后一行&lt;br&gt;g - 移动到第一行&lt;br&gt;q / ZZ - 退出 less 命令&lt;/p&gt;
+&lt;p&gt;4.其它有用的命令&lt;br&gt;v - 使用配置的编辑器编辑当前文件&lt;br&gt;h - 显示 less 的帮助文档&lt;br&gt;&amp;amp;pattern - 仅显示匹配模式的行，而不是整个文件&lt;/p&gt;
+&lt;p&gt;5.标记导航&lt;br&gt;当使用 less 查看大文件时，可以在任何一个位置作标记，可以通过命令导航到标有特定标记的文本位置：&lt;br&gt;ma - 使用 a 标记文本的当前位置&lt;br&gt;‘a - 导航到标记 a 处 &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;head&quot;&gt;&lt;a href=&quot;#head&quot; class=&quot;headerlink&quot; title=&quot;head&quot;&gt;&lt;/a&gt;head&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;head 用来显示档案的开头至标准输出中，默认head命令打印其相应文件的开头10行。&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;head [参数]… [文件]…  &lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-q 隐藏文件名&lt;br&gt;-v 显示文件名&lt;br&gt;-c&amp;lt;字节&amp;gt; 显示字节数&lt;br&gt;-n&amp;lt;行数&amp;gt; 显示的行数&lt;/li&gt;
+&lt;li&gt;命令实例&lt;pre&gt;&lt;code&gt;5. `head -n a 1.txt`显示1.txt的前a行，a为负则不显示后a行
+6. `head -c a 1.txt`显示1.txt的前a字节，a为负则不显示后n字节
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;每天一个linux命令&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天的命令nl more less head&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://mayezi.tk/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>每天几个Linux命令02</title>
+    <link href="http://mayezi.tk/2016/03/01/2016-03-01-%E6%AF%8F%E5%A4%A9%E5%87%A0%E4%B8%AALinux%E5%91%BD%E4%BB%A402/"/>
+    <id>http://mayezi.tk/2016/03/01/2016-03-01-每天几个Linux命令02/</id>
+    <published>2016-03-01T11:13:16.000Z</published>
+    <updated>2016-03-28T05:13:02.669Z</updated>
+    
+    <content type="html">&lt;p&gt;今天的命令 rmdir mv cp touch cat&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;rmdir&quot;&gt;&lt;a href=&quot;#rmdir&quot; class=&quot;headerlink&quot; title=&quot;rmdir&quot;&gt;&lt;/a&gt;rmdir&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;rm命令的功能为删除一个目录中的一个或多个文件或目录，删除某目录时也必须具有对父目录的写权限。&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;rmdir [选项]… 目录…&lt;/li&gt;
+&lt;li&gt;命令参数&lt;ol&gt;
+&lt;li&gt;-p 递归删除目录dirname，当子目录删除后其父目录为空时，也一同被删除。如果整个路径被删除或者由于某种原因保留部分路径，则系统在标准输出上显示相应的信息。 &lt;/li&gt;
+&lt;li&gt;-v, –verbose  显示指令执行过程 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;rm -pv dir&lt;/code&gt; &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;mv&quot;&gt;&lt;a href=&quot;#mv&quot; class=&quot;headerlink&quot; title=&quot;mv&quot;&gt;&lt;/a&gt;mv&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;视mv命令中第二个参数类型的不同（是目标文件还是目标目录），mv命令将文件重命名或将其移至一个新的目录中。当第二个参数类型是文件时，mv命令完成文件重命名，此时，源文件只能有一个（也可以是源目录名），它将所给的源文件或目录重命名为给定的目标文件名。当第二个参数是已存在的目录名称时，源文件或目录参数可以有多个，mv命令将各参数指定的源文件均移至目标目录中。在跨文件系统移动文件时，mv先拷贝，再将原有文件删除，而链至该文件的链接也将丢失。&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;mv [选项] 源文件或目录 目标文件或目录&lt;/li&gt;
+&lt;li&gt;命令参数&lt;ol&gt;
+&lt;li&gt;-b ：若需覆盖文件，则覆盖前先行备份。&lt;/li&gt;
+&lt;li&gt;-f ：force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖；&lt;/li&gt;
+&lt;li&gt;-i ：若目标文件 (destination) 已经存在时，就会询问是否覆盖！&lt;/li&gt;
+&lt;li&gt;-u ：若目标文件已经存在，且 source 比较新，才会更新(update)&lt;/li&gt;
+&lt;li&gt;-t  ： –target-directory=DIRECTORY move all SOURCE arguments into DIRECTORY，即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;mv 1.txt 2.txt&lt;/code&gt;将1.txt重命名为2.txt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mv 1.txt 2.txt ~/testdir/&lt;/code&gt;移动两个文件到testdir目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mv -t ~/testdir log1.txt log2.txt log3.txt&lt;/code&gt;将这三个文件移动到主目录下的testdir目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;cp&quot;&gt;&lt;a href=&quot;#cp&quot; class=&quot;headerlink&quot; title=&quot;cp&quot;&gt;&lt;/a&gt;cp&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;将源文件复制至目标文件，或将多个源文件复制至目标目录&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;cp [选项]… -t 目录 源..&lt;/li&gt;
+&lt;li&gt;命令参数&lt;ol&gt;
+&lt;li&gt;-a, –archive    等于-dR –preserve=all&lt;/li&gt;
+&lt;li&gt;–backup[=CONTROL    为每个已存在的目标文件创建备&lt;/li&gt;
+&lt;li&gt;-b                类似–backup 但不接受参数&lt;/li&gt;
+&lt;li&gt;–copy-contents        在递归处理是复制特殊文件内容&lt;/li&gt;
+&lt;li&gt;-d                等于–no-dereference –preserve=links&lt;/li&gt;
+&lt;li&gt;-f, –force        如果目标文件无法打开则将其移除并重试(当 -n 选项存在时则不需再选此项)&lt;/li&gt;
+&lt;li&gt;-i, –interactive        覆盖前询问(使前面的 -n 选项失效)&lt;/li&gt;
+&lt;li&gt;-H                跟随源文件中的命令行符号链接&lt;/li&gt;
+&lt;li&gt;-l, –link            链接文件而不复制&lt;/li&gt;
+&lt;li&gt;-L, –dereference   总是跟随符号链接&lt;/li&gt;
+&lt;li&gt;-n, –no-clobber   不要覆盖已存在的文件(使前面的 -i 选项失效)&lt;/li&gt;
+&lt;li&gt;-P, –no-dereference   不跟随源文件中的符号链接&lt;/li&gt;
+&lt;li&gt;-p                等于–preserve=模式,所有权,时间戳&lt;/li&gt;
+&lt;li&gt;–preserve[=属性列表   保持指定的属性(默认：模式,所有权,时间戳)，如果可能保持附加属性：环境、链接、xattr 等&lt;/li&gt;
+&lt;li&gt;-R, -r, –recursive  复制目录及目录内的所有项目&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cp 1.txt 2.txt&lt;/code&gt;复制1.txt到2.txt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cp 1.txt testdir/&lt;/code&gt;复制1.txt到testdir目录下&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cp -a test/ test1/&lt;/code&gt;复制test目录到test1目录下，如果没有则创建test1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;touch&quot;&gt;&lt;a href=&quot;#touch&quot; class=&quot;headerlink&quot; title=&quot;touch&quot;&gt;&lt;/a&gt;touch&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;touch命令参数可更改文档或目录的日期时间，包括存取时间和更改时间&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;touch [选项]… 文件…&lt;/li&gt;
+&lt;li&gt;命令选项&lt;br&gt;-a   或–time=atime或–time=access或–time=use 　只更改存取时间。&lt;br&gt;-c   或–no-create 　不建立任何文档。&lt;br&gt;-d 　使用指定的日期时间，而非现在的时间。&lt;br&gt;-f 　此参数将忽略不予处理，仅负责解决BSD版本touch指令的兼容性问题。&lt;br&gt;-m   或–time=mtime或–time=modify 　只更改变动时间。&lt;br&gt;-r 　把指定文档或目录的日期时间，统统设成和参考文档或目录的日期时间相同。&lt;br&gt;-t 　使用指定的日期时间，而非现在的时间&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;touch 1.txt 2.txt&lt;/code&gt;创建两个没有的文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch -c 1.txt&lt;/code&gt;没有则不创建&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch -r 1.txt 2.txt&lt;/code&gt;使2.txt的时间与1.txt的时间戳相同&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch -t 201603102100.22 1.txt&lt;/code&gt;指定1.txt的时间戳&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;cat&quot;&gt;&lt;a href=&quot;#cat&quot; class=&quot;headerlink&quot; title=&quot;cat&quot;&gt;&lt;/a&gt;cat&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;命令功能&lt;br&gt;1.一次显示整个文件:cat filename&lt;br&gt;2.从键盘创建一个文件:cat &amp;gt; filename 只能创建新文件,不能编辑已有文件.&lt;br&gt;3.将几个文件合并为一个文件:cat file1 file2 &amp;gt; file&lt;/li&gt;
+&lt;li&gt;命令格式&lt;br&gt;cat [选项] [文件]…&lt;/li&gt;
+&lt;li&gt;命令参数&lt;br&gt;-A, –show-all           等价于 -vET&lt;br&gt;-b, –number-nonblank    对非空输出行编号&lt;br&gt;-e                       等价于 -vE&lt;br&gt;-E, –show-ends          在每行结束处显示 $&lt;br&gt;-n, –number     对输出的所有行编号,由1开始对所有输出的行数编号&lt;br&gt;-s, –squeeze-blank  有连续两行以上的空白行，就代换为一行的空白行&lt;br&gt;-t                       与 -vT 等价&lt;br&gt;-T, –show-tabs          将跳格字符显示为 ^I&lt;br&gt;-u                       (被忽略)&lt;br&gt;-v, –show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外&lt;/li&gt;
+&lt;li&gt;命令实例&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cat filename&lt;/code&gt;查看文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat file1 file2 &amp;gt;file&lt;/code&gt;将file1 file2合并到file 覆盖的方式&lt;/li&gt;
+&lt;li&gt;‘cat &amp;gt;’与&lt;code&gt;cat &amp;gt;&amp;gt;&lt;/code&gt; 前者覆盖 后者追加&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;每天一个Linux命令&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天的命令 rmdir mv cp touch cat&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://mayezi.tk/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Andriod开发环境搭建</title>
+    <link href="http://mayezi.tk/2016/03/01/Andriod%EF%BC%88%E4%B8%80%EF%BC%89--%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://mayezi.tk/2016/03/01/Andriod（一）--环境搭建/</id>
+    <published>2016-02-29T19:35:12.000Z</published>
+    <updated>2016-03-28T05:12:39.133Z</updated>
+    
+    <content type="html">&lt;p&gt;本文简述如何在WIn8及以上Windows上搭建Android开发环境&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;写之前说说背景吧，本人一名在校大学生，信息工程专业，前两年的时间大多是在瞎扯，都不知道在干些什么，大多数时间都在玩游戏，==。今年大三，毕业在即，也想自己学点东西，可以说是增加一点砝码，这系列也是本人自己在学习过程中的一些笔记和总结吧&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;常言道，工欲善其事，必先利其器，学一样东西，首先我们得有学习的环境对吧，所以我们要做的第一件事就是搭建好学习的环境，操作平台为Windows。&lt;/p&gt;
+&lt;p&gt;废话不多说，开干。。&lt;/p&gt;
+&lt;h3 id=&quot;软件下载&quot;&gt;&lt;a href=&quot;#软件下载&quot; class=&quot;headerlink&quot; title=&quot;软件下载&quot;&gt;&lt;/a&gt;软件下载&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/downloads/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JDK(Java Development Kit)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://developer.android.com/sdk/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Andriod Studio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;鉴于从官网下载是~如~此~的~~慢，所以这里我直接放到的我的百度云里。&lt;/p&gt;
+&lt;p&gt;为什么不用eclipse呢，你可以google或者百度 &lt;strong&gt;Android Studio VS Eclipse&lt;/strong&gt;,我相信看完之后你会同意我的选择。 =.=&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://pan.baidu.com/s/1skz7Lox&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;相关软件点我下载，链接失效请联系我&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;软件安装&quot;&gt;&lt;a href=&quot;#软件安装&quot; class=&quot;headerlink&quot; title=&quot;软件安装&quot;&gt;&lt;/a&gt;软件安装&lt;/h3&gt;&lt;p&gt;####安装JDK&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;点击安装我们下载好的JDK，最好不要安装在我们的系统盘，尤其对于我这种经常乱折腾系统的人。可以在其他盘新建一个Java目录，将我们的JDK安装在这个目录下，因为JDK包含JDK和JRE所以安装完以后目录应该有JDK和JRE。附上&lt;a href=&quot;http://swiftlet.net/archives/639&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JRE和JDK的区别&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20151230110742342&quot; alt=&quot;JDK+JRE&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置Windows环境，右键我的电脑&amp;gt;属性&amp;gt;高级系统设置&amp;gt;环境变量&amp;gt;系统变量。新建JAVA_HOME，设置变量值为jdk的安装路径，如下图。&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;http://img.blog.csdn.net/20151230112623574&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt; 依次设置&lt;/p&gt;
+&lt;p&gt; Path=%JAVA_HOME%\bin;(Path不需要新建，找到Path编辑，在原有值的后面加上&lt;code&gt;;&lt;/code&gt; 在加上&lt;code&gt;=&lt;/code&gt;后面的内容)&lt;/p&gt;
+&lt;p&gt; CLASS_PATH=.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;测试安装是否成功&lt;/p&gt;
+&lt;p&gt;Win+R,输入cmd打开我们的命令行。输入java -version，回车，看到下图则说明安装成功。再次输入javac -version，查看结果。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20151230114700974&quot; alt=&quot;成功&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;安装Andriod-Studio&quot;&gt;&lt;a href=&quot;#安装Andriod-Studio&quot; class=&quot;headerlink&quot; title=&quot;安装Andriod Studio&quot;&gt;&lt;/a&gt;安装Andriod Studio&lt;/h4&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文简述如何在WIn8及以上Windows上搭建Android开发环境&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Andriod Studio" scheme="http://mayezi.tk/categories/Andriod-Studio/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>每天几个Linux命令01</title>
+    <link href="http://mayezi.tk/2016/02/29/2016-03-01-%E6%AF%8F%E5%A4%A9%E5%87%A0%E4%B8%AALinux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://mayezi.tk/2016/02/29/2016-03-01-每天几个Linux命令/</id>
+    <published>2016-02-29T06:02:43.000Z</published>
+    <updated>2016-03-28T05:13:09.478Z</updated>
+    
+    <content type="html">&lt;p&gt;今天的命令 ls cd mkdir rm pwd&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;ls-即list&quot;&gt;&lt;a href=&quot;#ls-即list&quot; class=&quot;headerlink&quot; title=&quot;ls 即list&quot;&gt;&lt;/a&gt;ls 即list&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;命令功能&lt;/p&gt;
+&lt;p&gt;列出目标目录中所有的子目录和文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令格式&lt;/p&gt;
+&lt;p&gt;ls [选项] [目录名]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;常用命令参数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-a, –all 列出目录下的所有文件，包括以 . 开头的隐含文件&lt;/li&gt;
+&lt;li&gt;-l,除了文件名之外，还将文件的权限、所有者、文件大小等信息详细列出来&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;cd&quot;&gt;&lt;a href=&quot;#cd&quot; class=&quot;headerlink&quot; title=&quot;cd&quot;&gt;&lt;/a&gt;cd&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;命令功能&lt;/p&gt;
+&lt;p&gt;切换当前目录至dirName&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令格式&lt;/p&gt;
+&lt;p&gt;cd [目录名]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;常用命令参数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cd /&lt;/code&gt; 进入系统根目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd ..&lt;/code&gt;或&lt;code&gt;cd ..//&lt;/code&gt; 返回上级目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd -&lt;/code&gt;返回进入此目录之前的目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd&lt;/code&gt;或&lt;code&gt;cd ~&lt;/code&gt;进入当前用户主目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd /yourdirname&lt;/code&gt;进入指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd !$&lt;/code&gt;把上个命令的参数作为cd参数使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;pwd&quot;&gt;&lt;a href=&quot;#pwd&quot; class=&quot;headerlink&quot; title=&quot;pwd&quot;&gt;&lt;/a&gt;pwd&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;命令功能&lt;/p&gt;
+&lt;p&gt;查看当前工作目录的完整路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令格式&lt;/p&gt;
+&lt;p&gt;pwd [选项]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;常用命令参数&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt;即可&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pwd -P&lt;/code&gt;目录连接链接时，pwd -P  显示出实际路径，而非使用连接（link）路径；pwd显示的是连接路径&lt;/li&gt;
+&lt;li&gt;PWD当前目录被删除仍然可以显示当前目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;mkdir&quot;&gt;&lt;a href=&quot;#mkdir&quot; class=&quot;headerlink&quot; title=&quot;mkdir&quot;&gt;&lt;/a&gt;mkdir&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;命令功能&lt;/p&gt;
+&lt;p&gt;通过 mkdir 命令可以实现在指定位置创建以 DirName(指定的文件名)命名的文件夹或目录。要创建文件夹或目录的用户必须对所创建的文件夹的父文件夹具有写权限。并且，所创建的文件夹(目录)不能与其父目录(即父文件夹)中的文件名重名，即同一个目录下不能有同名的(区分大小写)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令格式&lt;/p&gt;
+&lt;p&gt;mkdir [选项] [目录]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;常用命令参数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-m, –mode=模式，设定权限&amp;lt;模式&amp;gt; (类似 chmod)，而不是 rwxrwxrwx 减 umask e.g.    &lt;code&gt;mkdir -m 777 test&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;-p, –parents  可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录&lt;/li&gt;
+&lt;li&gt;-v, –verbose  每次创建新目录都显示信息&lt;/li&gt;
+&lt;li&gt;–help   显示此帮助信息并退出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;rm&quot;&gt;&lt;a href=&quot;#rm&quot; class=&quot;headerlink&quot; title=&quot;rm&quot;&gt;&lt;/a&gt;rm&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;命令功能&lt;/p&gt;
+&lt;p&gt;删除一个目录中的一个或多个文件或目录，如果没有使用- r选项，则rm不会删除目录。如果使用 rm 来删除文件，通常仍可以将该文件恢复原状&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令格式&lt;/p&gt;
+&lt;p&gt;rm [选项] [文件···]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;命令参数&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;-f, –force    忽略不存在的文件，从不给出提示&lt;/li&gt;
+&lt;li&gt;-i, –interactive 进行交互式删除&lt;/li&gt;
+&lt;li&gt;-r, -R, –recursive   指示rm将参数中列出的全部目录和子目录均递归地删除&lt;/li&gt;
+&lt;li&gt;-v, –verbose    详细显示进行的步骤&lt;br&gt; –help     显示此帮助信息并退出&lt;br&gt; –version  输出版本信息并退出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;示例    &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;rm -- -a&lt;/code&gt;删除以a开头的文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;参考文献：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;每天一个Linux命令&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天的命令 ls cd mkdir rm pwd&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://mayezi.tk/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL中exists的用法</title>
+    <link href="http://mayezi.tk/2015/12/07/mysql-1/"/>
+    <id>http://mayezi.tk/2015/12/07/mysql-1/</id>
+    <published>2015-12-07T15:38:20.000Z</published>
+    <updated>2016-03-01T15:38:20.000Z</updated>
+    
+    <content type="html">&lt;p&gt;主要是SQL语句中exists/not exists的用法，今天实验课遇到一个exists，好久没用，最终还是解决了。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;不废话，表如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;student&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Sno&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Sname&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;age&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;college&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00001&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;张三&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;20&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;计算机学院&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00002&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;李四&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;19&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;通信学院&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00003&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;王五&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;21&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;计算机学院&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;course&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;CourseId&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;CourseName&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;CourseBeforeId&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C1&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;计算机导论&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Null&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C语言&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;c3&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;数据结构&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Sno&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;CourseId&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Score&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00001&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C1&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;95&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00001&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;80&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00001&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C3&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;84  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00002&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C1&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;80&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00002&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00003&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C1&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;78&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;S00003&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;C3&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;70&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;题目：用SELECT的存在量词EXISTS，查询与”张三“在同一学院学习的学生信息&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看到这个之后，多表连接查询&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select * from student &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    where exists (select college from student where Sname=&amp;apos;张三&amp;apos;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;但结果呢&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xo7bt.com1.z0.glb.clouddn.com/1.png&quot; alt=&quot;运行结果&quot;&gt;&lt;/p&gt;
+&lt;p&gt;那么为什么不对呢，让我们来看看这条语句是怎样运行的&lt;/p&gt;
+&lt;p&gt;首先取Student表中的一个元组，然后在Student表中依次找Sname=’张三’，如果存在，则外层查询的where子句返回为真，则Student表中的该元组可以输出。然后依次遍历Student表中的其他元组。因为在Student表中”张三”这个人始终存在，所以where始终返回true，输出了三个学生的信息。&lt;/p&gt;
+&lt;p&gt;后来问同学，baidu了一下，于是看到了这样一篇&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/duqi_2009/article/details/6125073&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SQL语句中exists/not exists的用法分析&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;都是外表连接，于是想到自身表连接是否要为表区取别名呢。答案当然是肯定的，因为我是这样做出来的。 = =&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;SELECT * FROM student AS s1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	WHERE  EXISTS &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		(SELECT * FROM student AS s2 WHERE s1.college=(SELECT college FROM student WHERE Sname=&amp;apos;张三&amp;apos;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xo7bt.com1.z0.glb.clouddn.com/BaiduShurufa_2015-11-18_20-42-32.png&quot; alt=&quot;运行结果&quot;&gt;&lt;/p&gt;
+&lt;p&gt;好久没更新了，由于上周装双系统不知怎么把Win10的系统引导搞坏了，断断续续重装，现在才有时间。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;主要是SQL语句中exists/not exists的用法，今天实验课遇到一个exists，好久没用，最终还是解决了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://mayezi.tk/categories/MySQL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Win8/Win8.1下完全卸载MySQL</title>
+    <link href="http://mayezi.tk/2015/12/07/mysql/"/>
+    <id>http://mayezi.tk/2015/12/07/mysql/</id>
+    <published>2015-12-07T15:35:12.000Z</published>
+    <updated>2016-03-28T05:12:32.023Z</updated>
+    
+    <content type="html">&lt;p&gt;本文简述如何在WIn8及以上Windows上完全卸载MySQL数据库&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;很多时候我们由于某些原因需要重新安装MySQL，而本人悄悄属于那种爱折腾之类的人。鉴于每次重装MySQL都会卡死在最后一步Start Servers，故写此文档以便日后查看。&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;1-Win8-Win8-1-直接将鼠标移动到左下角-然后右键，程序与功能，直接卸载你的MySQL。当然，这样卸载以后再重装肯定是不行的。所以我们到了第二步。&quot;&gt;&lt;a href=&quot;#1-Win8-Win8-1-直接将鼠标移动到左下角-然后右键，程序与功能，直接卸载你的MySQL。当然，这样卸载以后再重装肯定是不行的。所以我们到了第二步。&quot; class=&quot;headerlink&quot; title=&quot;1. Win8/Win8.1 直接将鼠标移动到左下角, 然后右键，程序与功能，直接卸载你的MySQL。当然，这样卸载以后再重装肯定是不行的。所以我们到了第二步。&quot;&gt;&lt;/a&gt;1. Win8/Win8.1 直接将鼠标移动到左下角, 然后右键，程序与功能，直接卸载你的MySQL。当然，这样卸载以后再重装肯定是不行的。所以我们到了第二步。&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20151205184843061&quot; alt=&quot;鼠标移至左下角，右键单击，选择程序与功能&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20151205185008892&quot; alt=&quot;这里直接写在我们安装的MySQL&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;2-Win键-R，输入regedit，也就是打开我们的注册表编辑器，删除以下目录文件夹。&quot;&gt;&lt;a href=&quot;#2-Win键-R，输入regedit，也就是打开我们的注册表编辑器，删除以下目录文件夹。&quot; class=&quot;headerlink&quot; title=&quot;2. Win键+R，输入regedit，也就是打开我们的注册表编辑器，删除以下目录文件夹。&quot;&gt;&lt;/a&gt;2. Win键+R，输入regedit，也就是打开我们的注册表编辑器，删除以下目录文件夹。&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20151205185351654&quot; alt=&quot;Win键+R，输入regedit&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;3-Win键-E，打开我的电脑，直接在地址栏输入-C-ProgramData-MySQL-删除该文件夹&quot;&gt;&lt;a href=&quot;#3-Win键-E，打开我的电脑，直接在地址栏输入-C-ProgramData-MySQL-删除该文件夹&quot; class=&quot;headerlink&quot; title=&quot;3. Win键+E，打开我的电脑，直接在地址栏输入 C:\ProgramData\MySQL 删除该文件夹&quot;&gt;&lt;/a&gt;3. Win键+E，打开我的电脑，直接在地址栏输入 C:\ProgramData\MySQL 删除该文件夹&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20151205185912298&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;4-重启，重新安装MySQL即可。&quot;&gt;&lt;a href=&quot;#4-重启，重新安装MySQL即可。&quot; class=&quot;headerlink&quot; title=&quot;4.  重启，重新安装MySQL即可。&quot;&gt;&lt;/a&gt;4.  重启，重新安装MySQL即可。&lt;/h4&gt;&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文简述如何在WIn8及以上Windows上完全卸载MySQL数据库&lt;br&gt;
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://mayezi.tk/categories/MySQL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下GitCafe Pages+Hexo搭建博客</title>
+    <link href="http://mayezi.tk/2015/12/07/test/"/>
+    <id>http://mayezi.tk/2015/12/07/test/</id>
+    <published>2015-12-07T09:27:38.000Z</published>
+    <updated>2016-03-28T05:12:16.854Z</updated>
+    
+    <content type="html">&lt;p&gt;本文主要讲述如何在Windows上搭建自己的博客以及发布在Gitcafe上&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;em&gt;在无数次遇到了Windows系统崩溃的情况下，我决定还是自己写一个文档来搭建我的个人博客，之前看了很多文档，，在此自己也想详细记录一下每个步骤，以备不时之需。&lt;br&gt;–By&lt;a href=&quot;http://mayezi.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;马叶子zy&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;话不多说，只需要按照我的步骤一步一步来，我们先搭建好博客的框架，之后我们再慢慢的去了解每一个配置&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;软件安装&quot;&gt;&lt;a href=&quot;#软件安装&quot; class=&quot;headerlink&quot; title=&quot;软件安装&quot;&gt;&lt;/a&gt;&lt;strong&gt;软件安装&lt;/strong&gt;&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sublimetext&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;安装Hexo框架&quot;&gt;&lt;a href=&quot;#安装Hexo框架&quot; class=&quot;headerlink&quot; title=&quot;安装Hexo框架&quot;&gt;&lt;/a&gt;&lt;strong&gt;安装Hexo框架&lt;/strong&gt;&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;p&gt;1.安装完&lt;strong&gt;Git&lt;/strong&gt;以后，在桌面上我们右键，找到Git Bash Here 并打开。如下图&lt;br&gt;&lt;img src=&quot;http://7xo7bt.com1.z0.glb.clouddn.com/BaiduShurufa_2015-12-7_15-22-47.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2.输入命令,安装Hexo框架&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;3.创建你的博客文件夹，然后在你创建的文件夹下右键，打开Git Bash窗口&lt;/p&gt;
+&lt;p&gt;4.初始化Hexo&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;5.安装依赖包&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;6.安装 hexo-deployer-git插件&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;7.生成初始化文件并且启动服务预览&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo s -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;8.如果你看到下图所示效果，恭喜你，已经在本地搭建好了博客,赶紧在你的浏览器打开吧！&lt;a href=&quot;http://localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;localhost:4000&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xo7bt.com1.z0.glb.clouddn.com/初始化并且发布.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;附上效果图&lt;br&gt;&lt;img src=&quot;http://7xo7bt.com1.z0.glb.clouddn.com/博客搭建成功.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;好的，在一阵忙碌之后，我们终于在本地搭建并且发布了自己的第一个博客，但是此时我们只能在本地看到自己的博客。接下来我们要做的就是把这个博客发布到网上。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;配置GitCafe&quot;&gt;&lt;a href=&quot;#配置GitCafe&quot; class=&quot;headerlink&quot; title=&quot;配置GitCafe&quot;&gt;&lt;/a&gt;&lt;strong&gt;配置&lt;a href=&quot;https://gitcafe.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitCafe&lt;/a&gt;&lt;/strong&gt;&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;假设你的 GitCafe用户名是&lt;code&gt;name&lt;/code&gt;，你的邮箱为&lt;code&gt;name@gmail.com&lt;/code&gt;，密码为&lt;code&gt;password&lt;/code&gt;。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.到 &lt;a href=&quot;https://gitcafe.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://gitcafe.com&lt;/a&gt; 注册账号，然后创建项目，项目名称和你的用户名一致,凡是选填的我们都不填，其他默认。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xo7bt.com1.z0.glb.clouddn.com/project_config.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2.配置SSH公钥&lt;/p&gt;
+&lt;p&gt;由于本人已经配置好了，所以详情参照官方文档即可，如下&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://help.gitcafe.com/manuals/help/ssh-key&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;添加SSH公钥&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3.测试是否可以连接 GitCafe 服务器&lt;/p&gt;
+&lt;p&gt;在桌面上双击打开 Git Bash，输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ssh -T git@gitcafe.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果是第一次连接的话，会出现:&lt;/p&gt;
+&lt;p&gt;The authenticity of host ‘gitcafe.com (50.116.2.223)’ can’t be established.&lt;/p&gt;
+&lt;p&gt; #RSA key fingerprint is 84:9e:c9:8e:7f:36:28:08:7e:13:bf:43:12:74:11:4e.&lt;/p&gt;
+&lt;p&gt; #Are you sure you want to continue connecting (yes/no)?&lt;/p&gt;
+&lt;p&gt;直接输入 yes 回车，然后会提示你输入 passphrase 口令：&lt;/p&gt;
+&lt;p&gt;Enter passphrase for key ‘/c/Users/USERNAME/.ssh/id_rsa’ :&lt;/p&gt;
+&lt;p&gt;刚才我们根本就没设置，所以这次也直接回车，当看到&lt;/p&gt;
+&lt;p&gt;Hi name! You’ve successfully authenticated, but GitCafe does not provide shell access.&lt;/p&gt;
+&lt;p&gt;我们就连接成功了。&lt;/p&gt;
+&lt;p&gt;4.设置用户信息&lt;/p&gt;
+&lt;p&gt;设置你的用户名,邮箱&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;name&amp;quot;
+git config --global user.email &amp;quot;name@gmail.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到此为止，SSH Key 配置成功，本机已成功连接到 GitCafe。&lt;br&gt;就差最后一步了，把博客部署到 GitCafe。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;部署博客到GitCafe&quot;&gt;&lt;a href=&quot;#部署博客到GitCafe&quot; class=&quot;headerlink&quot; title=&quot;部署博客到GitCafe&quot;&gt;&lt;/a&gt;&lt;strong&gt;部署博客到GitCafe&lt;/strong&gt;&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;p&gt;1.打开你的博客文件夹，用&lt;a href=&quot;http://www.sublimetext.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sublimetext&lt;/a&gt;打开&lt;code&gt;_config.yml&lt;/code&gt;文件，修改最后的deploy标签属性，将以下代码中的&lt;code&gt;name&lt;/code&gt;替换为你的GitCafe用户名&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deploy:
+    type: git
+    repository: https://gitcafe.com/name/name.git 
+    branch: gitcafe-pages
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意：除了 “https://“ 中的冒号以外，其他每个冒号后面都有个空格，最后保存。&lt;/p&gt;
+&lt;p&gt;2.在你的博客文件夹右键打开Git Bash（无特殊说明的情况下在任意地方打开Git Bash都行，以后我们发布博客都在这个文件夹打开&lt;strong&gt;Git&lt;/strong&gt;），输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo d
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.终于到了这一步，打开&lt;a href=&quot;http://mayezi.gitcafe.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mayezi.gitcafe.io&lt;/a&gt;,当然，这是我的博客，你只需要将&lt;code&gt;mayezi&lt;/code&gt;改成你的GitCafe用户名即可。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;如果你觉得我的文章有用，欢迎转载，只需附上本文链接即可。这样显示的是默认的Hello主题，后续我会详细解说怎么写博客，怎么修改主题&lt;br&gt;等。。。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://zipperary.com/2013/05/28/hexo-guide-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo系列教程：（二）搭建hexo博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.wtoutiao.com/p/I4aojZ.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Windows 下搭建 Hexo 博客并将其部署到 GitCafe 终极教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/f66103553c45&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Hexo + Next搭建静态博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文主要讲述如何在Windows上搭建自己的博客以及发布在Gitcafe上&lt;br&gt;
+    
+    </summary>
+    
+      <category term="博客搭建" scheme="http://mayezi.tk/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+  </entry>
+  
+</feed>
